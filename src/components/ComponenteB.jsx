@@ -1,13 +1,9 @@
 import Raect from "react";
 
-const ComponenteB = ({ textoBtn}) => {
-
-    const manejarClick = () => {
-        alert("click");
-    }
+const ComponenteB = ({ textoBtn, onClick}) => {
 
     return (
-        <button onClick={manejarClick}>{ textoBtn} </button>
+        <button onClick={onClick}>{ textoBtn} </button>
     );
 };
 

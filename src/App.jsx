@@ -7,6 +7,10 @@ function App() {
   const miEmoji = "✈"
   const miBoton = "Buscar destino"
 
+  const manejarClick = () => {
+    alert("Click en componente padre")
+  }
+
   return (
     <>
       <div className='box'>
@@ -16,6 +20,7 @@ function App() {
         />
         <ComponenteB
           textoBtn= {miBoton}
+          onClick={manejarClick}
         />
       </div>
     </>
