@@ -2,8 +2,9 @@ import Raect from "react";
 
 const ComponenteB = ({ textoBtn, onClick}) => {
 
+    const miValor = "Datos del componente hijo";
     return (
-        <button onClick={onClick}>{ textoBtn} </button>
+        <button onClick={ ()=>{onClick(miValor)}}>{ textoBtn} </button>
     );
 };
 
